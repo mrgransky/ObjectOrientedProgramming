@@ -7,10 +7,7 @@
 #include <algorithm>
 #include <functional>
 using namespace std;
-
-
 int CalculateAverage::studentNum = 0;
-
 CalculateAverage::CalculateAverage(string filepath){
 	cout << "********----- Welcome to GPA calcualting program -----********" << '\n'<<endl;
 	ifstream myfile(filepath);
@@ -28,7 +25,6 @@ CalculateAverage::CalculateAverage(string filepath){
 	}
 	else cout << "Unable to open file";
 }
-
 
 void CalculateAverage::setInfo( int inpID, string inpName, double inpGrade1, double inpGrade2, double inpGrade3){
 	list[studentNum][0] = inpID;
